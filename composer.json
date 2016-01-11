@@ -1,0 +1,46 @@
+{
+  "name" : "aporat/rate-limiter-middleware",
+  "description" : "PHP Rate Limiter Middleware",
+  "type" : "library",
+  "authors" : [{
+    "name" : "Adar Porat",
+    "email" : "adar.porat@gmail.com",
+    "homepage" : "http://github.com/aporat"
+  }
+  ],
+  "keywords" : [
+    "slim",
+    "middleware",
+    "rate",
+    "limit"
+  ],
+  "homepage" : "https://github.com/aporat/rate-limiter-middleware",
+  "license": "MIT",
+  "require" : {
+    "php" : ">=5.5",
+    "psr/http-message": "^1.0",
+    "predis/predis": "^1.0"
+  },
+  "require-dev": {
+    "slim/slim": "~3",
+    "squizlabs/php_codesniffer": "^2.5",
+    "phpunit/phpunit": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RateLimiter\\": "src/"
+    }
+  },
+  "support" : {
+    "email" : "adar.porat@gmail.com",
+    "issues" : "https://github.com/aporat/rate-limiter-middleware/issues"
+  },
+  "scripts": {
+    "test": [
+      "php vendor/bin/phpcs",
+      "php vendor/bin/phpunit"
+    ],
+    "phpunit": "php vendor/bin/phpunit",
+    "phpcs": "php vendor/bin/phpcs"
+  }
+}

@@ -1,0 +1,1 @@
+<?phpnamespace RateLimiter\Exceptions;// rate limitclass RateLimitException extends \Exception {    protected $code = 404;}
